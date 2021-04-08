@@ -11,7 +11,7 @@ WORKDIR /app
 RUN  cargo +nightly build --target=wasm32-unknown-unknown --release
 
 # Current dev build of Envoy only supports systems with glibC
-FROM ubuntu:latest
+FROM ubuntu:rolling
 
 # RUN apt update && apt install -y wget
 
