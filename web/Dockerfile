@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:21.2-alpine3.18
 
 # install simple http server for serving static content
 RUN npm install -g http-server
